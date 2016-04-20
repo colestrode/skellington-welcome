@@ -16,6 +16,8 @@ require('skellington')({
 );
 ```
 
+When a new users joins, your Skellington bot will DM them with your message.
+
 ## Help
 
 Just DM your bot with `welcome` and it will reply with the welcome text.
