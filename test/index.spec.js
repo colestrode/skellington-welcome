@@ -43,7 +43,7 @@ describe('Welcome', () => {
     exportedBot.init(controllerMock);
 
     expect(listenersMock.dmMessage).to.be.calledTwice;
-    expect(listenersMock.dmMessage.alwaysCalledWith(text)).to.be.true;
+    expect(listenersMock.dmMessage.alwaysCalledWith({text: text})).to.be.true;
 
     expect(controllerMock.on).to.have.been.calledWith('team_join', dmMessage);
     expect(controllerMock.hears).to.have.been.calledWith('^welcome( message)?$', 'direct_message', dmMessage);

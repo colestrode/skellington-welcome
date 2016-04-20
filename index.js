@@ -12,7 +12,7 @@ module.exports = function(config) {
   };
 
   function init(controller) {
-    controller.on('team_join', listeners.dmMessage(config.text));
-    controller.hears('^welcome( message)?$', 'direct_message', listeners.dmMessage(config.text));
+    controller.on('team_join', listeners.dmMessage(config));
+    controller.hears('^welcome( message)?$', 'direct_message', listeners.dmMessage(config));
   }
 };
