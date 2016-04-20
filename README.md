@@ -16,7 +16,7 @@ require('skellington')({
 );
 ```
 
-When a new users joins, your Skellington bot will DM them with your message.
+When a new users joins your team, your Skellington bot will DM them with your message.
 
 ## Help
 
